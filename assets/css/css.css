@@ -1,0 +1,158 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html body{
+  height: 100%;
+  margin: 0;
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+}
+
+body::-webkit-scrollbar{
+  background-color: #ffe9ec;
+}
+
+body::-webkit-scrollbar-thumb{
+  background-color: purple;
+}
+
+body {
+  background: url(../img/backgrounds/Background_image_pages.png) fixed;
+  background-repeat: repeat;
+}
+
+nav li{
+  list-style-type: none;
+}
+
+.navbar {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 20px;
+ background-color: #E591FF;
+}
+
+.navbar_links a {
+ color: black;
+ font-weight: bold;
+ text-decoration: none;
+}
+
+.logo {
+  aspect-ratio: 5/1;
+  width: 25vw;
+}
+
+.navbar_menu {
+ display: flex;
+ gap: 10px;
+ font-size: 20px;
+}
+
+.navbar_menu li:hover {
+ background-color: purple;
+ border-radius: 50px;
+ transition: 1s ease;
+}
+
+.navbar_menu li {
+ padding: 0px 10px;
+}
+
+
+input[type=checkbox]{
+ display: none;
+}
+
+.menu_logo {
+ display: none;
+ font-size: 24px;
+ user-select: none;
+}
+
+.container {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+img {
+max-width: 100%;
+max-height:100%;
+}
+
+.text {
+font-size: 20px;
+padding-left: 20px;
+}
+
+.banner{
+  height: calc(60vw - 68px);
+  background: url(../../images/banner2.jpg) no-repeat fixed;
+  background-position: top;
+  position: relative;
+  background-size: 100vw calc(55vw - 68px);
+  transform: translateY(0);
+}
+
+
+
+
+@media only screen and (min-width: 10px) and (max-width: 450px){
+
+  .navbar_menu {
+   display:none;
+   position: absolute;
+   background-color: #DF83FC;
+   right: 0;
+   left: 0;
+   text-align: center;
+   padding: 16px 0;
+   margin-top: 20px;
+  }
+  .navbar_menu li:hover {
+   display: inline-block;
+   background-color: purple;
+   transition: 1s ease;
+  }
+  .navbar_menu li + li {
+   margin-top: 12px;
+  }
+  input[type=checkbox]:checked ~ .navbar_menu{
+   display: block;
+  }
+  .menu_logo {
+   display: block;
+  }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 650px){
+
+  .navbar_menu {
+   display:none;
+   position: absolute;
+   background-color: #DF83FC;
+   right: 0;
+   left: 0;
+   text-align: center;
+   padding: 16px 0;
+   margin-top: 20px;
+  }
+  .navbar_menu li:hover {
+   display: inline-block;
+   background-color: purple;
+   transition: 1s ease;
+  }
+  .navbar_menu li + li {
+   margin-top: 12px;
+  }
+  input[type=checkbox]:checked ~ .navbar_menu{
+   display: block;
+  }
+
+  .menu_logo {
+   display: block;
+  }
+}

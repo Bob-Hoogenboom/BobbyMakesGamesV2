@@ -3,136 +3,60 @@
 	<head>
 		<title>BobbyMakesGames</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" href="assets/css/css.css"/>
 		<link rel="icon" href="images/TabLogo.png">
 		<script src="assets/js/projects.js"></script>
 	</head>
 	<body>
 
-		<!-- Header -->
 			<header id="header">
-				<div class="inner">
-					<a href="index.html" class="logo">
-						<img src="images/BobbyBoy.png">
-					</a>
 
-					<nav id="nav">
-						<a href="index.html">Home</a>
-						<a href="aboutMe.html">About me</a>
-						<h1>Projects</h1>
-						<a href="projCuphead.html">Cuphead</a>
-						<a href="projDataCenter.html">DataCenter</a>
-						<a href="projZeldaOOT.html">Zelda</a>
-						<a href="projStarFall.html">StarFall</a>
-						<!-- <a href="projLandmacht.html">VBS-Tutorial</a> -->
-						<h1>Social</h1>
-						<a href="https://www.linkedin.com/in/bob-hoogenboom-b0a558209/" target="_blank" class="icon fa-linkedin"> linkedIn<span class="label">linkedIn</span></a>
-						<a href="https://sketchfab.com/Bobby-Boy" target="_blank" class="icon fa-cube"> Sketchfab<span class="label">Sketchfab</span></a>
-						<a href="https://github.com/Bob-Hoogenboom" target="_blank" class="icon fa-github"> GitHub<span class="label">Github</span></a>
+					<nav class="navbar">
+						<div class="inner">
+							<a href="index.html" class="logo">
+								<img src="images/BobbyBoy.png">
+							</a>
+						</div>
+						<section class="navbar_links">
+							<input type="checkbox" id="checkbox_toggle">
+							<label for="checkbox_toggle" class="menu_logo">&#9776;</label>
+							<ul class="navbar_menu">
+								<li><a href="aboutMe.html">About me</a></li>
+								<li><a href="projCuphead.html">Projects</a></li>
+								<li><a href="projDataCenter.html">Collection</a></li>
+								<li><a href="projDataCenter.html">Contact me</a></li>
+							</ul>
+						</section>
 					</nav>
-					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
-				</div>
 			</header>
 
-		<!-- Banner -->
-			<section id="banner">
+
+			<section class="banner">
 				<h1>Bob Hoogenboom</h1>
 				<p>All-Round Game-Developer</p>
 			</section>
 
-		<!-- Project Group #1 -->
-			<section id="one" class="wrapper">
-				<div class="inner">
-						<header class="align-center">
-							<h2>Game Projects</h2>
-							<p>Games/mechanics i worked on</p>
-						</header>
 
-					<main id="project_container">
-
-					</main>
-
+			<div class="container">
+				<div class="image">
+					<img src="images/projStarFall/StarFallBanner.png" alt="starFallBanner" width="250px">
 				</div>
-			</section>
-
-		<!-- Art Group #2 -->
- 		<section id="two" class="wrapper style1 special"> <!-- wrapper style1 special rule 1806 main.css -->
-				<div class="inner">
-					<header>
-						<h2>Art Projects</h2>
-						<p>Art assets i made</p>
-					</header>
-					<div class="flex flex-3">
-
-					<!--Art 3D ChronoFrogg-->
-					<article>
-							<header>
-								<h3 class="align-center">ChronoTrigger Frog</h3>
-							</header>
-							<figure class="align-center">
-								<img src="images/art/ArtChronoFrogRender.png" alt="Frog" width="250px">
-								<p class="align-center">Frog from ChronoTrigger made with MagicaVoxel</p>
-							</figure>
-							<footer>
-								<a href="https://sketchfab.com/3d-models/chrono-trigger-frog-voxel-24b730d0d95e4f639679a6f98d75c170" target="_blank" class="button special">SketchFab</a>
-							</footer>
-						</article>
-					<!--Art 3D BlackMage-->
-					<article>
-							<header>
-								<h3 class="align-center">Black Mage FF</h3>
-							</header>
-							<figure class="align-center">
-								<img src="images/art/ArtBlackMageRender.png" alt="BlackMage" width="250px">
-								<p class="align-center">Black Mage from Final Fantasy 1 made with MagicaVoxel</p>
-							</figure>
-							<footer>
-								<a href="https://sketchfab.com/3d-models/black-mage-ffi-45b4710a61294dc4a9ffed2261da389b" target="_blank" class="button special">SketchFab</a>
-							</footer>
-						</article>
-					<!--Art 3D MetaBee-->
-					<article>
-							<header>
-								<h3 class="align-center">MetaBee MetaBots</h3>
-							</header>
-							<figure class="align-center">
-								<img src="images/art/ArtMetaBeeRender.png" alt="MetaBee" width="250px">
-								<p class="align-center">MetaBee from MetaBots made with MagicaVoxel</p>
-							</figure>
-							<footer>
-								<a href="https://sketchfab.com/3d-models/metabeemetabots-d7c5ce6d7940487fa4ab47c95aea68fe" target="_blank" class="button special">SketchFab</a>
-							</footer>
-						</article>
-
-					</div>
+				<div class="text">
+					<p class="align-center">A Metroidvania Couch Co-op</p>
+					<a href="projStarFall.html" class="button special">See Project</a>
 				</div>
-		</section>
+			</div>
 
-		<!-- About-Me Group #3 -->
-			<section id="three" class="wrapper">
-				<div class="inner">
-						<header class="align-center">
-							<h2> <a href="aboutMe.html" class="button special"> About Me </a></h2>
-						</header>
+			<div class="container">
+				<div class="image">
+					<img src="images/projDataCenter/DataCenterBanner.png" alt="DataCenterBanner" width="250px">
 				</div>
-			</section>
-
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<div class="flex">
-						<div class="copyright">
-							&copy; Bob Hoogenboom
-						</div>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/bob-hoogenboom-b0a558209/" target="_blank" class="icon fa-linkedin"><span class="label">linkedIn</span></a></li>
-							<li><a href="https://sketchfab.com/Bobby-Boy" target="_blank" class="icon fa-cube"><span class="label">Github</span></a></li>
-							<li><a href="https://github.com/Bob-Hoogenboom" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
-						</ul>
-					</div>
+				<div class="text">
+					<p>A game made for data center Interxion</p>
+					<a href="projDataCenter.html" class="button special">See Project</a>
 				</div>
-			</footer>
+			</div>
 
 	</body>
 </html>
